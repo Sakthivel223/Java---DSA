@@ -19,10 +19,11 @@ class Main
         }
         return;
     }
-      for(int i = 0, i < str.length() ; i++)
+      for(int i = 0;i < str.length() ; i++)
         {
           char ch = str.charAt(i);
           String rest = str.substring(0,i) + str.substring(i + 1);
-          perm(res, ans + ch, set);
+          perm(rest, ans + ch, set);
         }
+  }
   }
